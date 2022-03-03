@@ -1,0 +1,161 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*SETUP*/
+* { 
+    margin: 0; padding: 0; 
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --bg-gray: #e9ecef;
+    --bg-light-gray: #f8f9fa;
+    --bg-semired: rgb(255, 0, 65);
+    --bg-dark-gray: #353535;
+
+    --font-black: #212529;
+    --font-black-75: #212529b6;
+    --font-white:#f7f7f7 ;
+  }
+
+/*NAV*/
+#navigation{
+    display: flex;
+    flex-direction: row-reverse;
+    background: var(--bg-light-gray);
+    padding:1.2rem;
+}
+#navigation ul {
+    display: flex;
+    list-style-type: none;
+}
+#navigation ul li {
+    margin-right: 1rem;
+}
+#navigation a{
+    text-decoration: none;
+    color: var(--font-black);
+}
+
+/*JUMBOTRON*/
+
+#aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-gray);
+    height: 50vh;
+}
+
+.about-text{
+    width: 90%;
+    color: var(--font-black-75);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.about-text h2{
+    color: var(--font-black);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.about-buttons{
+    padding-top: 2rem;
+}
+.about-buttons button{
+    padding: 0.6rem;
+    margin: 0 1rem 0 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius:1rem;
+    background: var(--bg-semired);
+}
+.about-buttons a {
+    text-decoration: none;
+    color: var(--font-white);
+}
+
+/*PROJECTS*/
+
+#projects{
+    background: var(--bg-light-gray);
+    height: auto;
+}
+.project-container{
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    gap: 10px;
+}
+.project-card{
+    margin: 2rem;
+    max-width: 400px;
+    min-width: 200px;
+    background: var(--bg-gray);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+.project-desc{
+    padding: 20px;
+}
+.project-desc h4{
+    font-size: 1.5rem;
+    color: var(--bg-semired);
+}
+.project-img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+}
+
+/*CONTACT*/
+
+#contact{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background: var(--bg-dark-gray);
+    height: 50vh;
+    color: var(--font-white);
+    font-size: 1.125rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.form-info{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form input{
+    margin-top:20px;
+    margin-right: -1px;
+    width: 46.5%;
+    padding: 10px;
+}
+.contact-form textarea{
+    width: 98%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.contact-form form *{
+    font-size: 1.125rem;
+}
+
+.form-submit button{
+    background: var(--bg-dark-gray);
+    margin-top: 10px;
+    padding: 0.6rem;
+    border: 2px solid var(--font-white);
+    color: var(--font-white);
+}
